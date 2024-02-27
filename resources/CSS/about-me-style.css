@@ -1,0 +1,149 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#about {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-top: 150px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#about li {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+#about h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+#about a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.list {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: auto;
+}
+
+#css-logo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+#java-logo {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+#html-logo {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 20px;
+}
+
+#javascript-logo {
+    width: 240px;
+    height: 240px;
+    margin-bottom: 20px;
+}
+
+#react-logo {
+    width: 230px;
+    height: 230px;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#java-logo, #html-logo, #css-logo, #javascript-logo, #react-logo {
+    transition: transform 0.3s ease;
+}
+
+#java-logo:hover, #html-logo:hover, #css-logo:hover, #javascript-logo:hover, #react-logo:hover {
+    transform: scale(1.3);
+}
+
+.upper-row, .lower-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill {
+    text-align: center;
+}
+
+.description {
+    display: none;
+}
+
+#project-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 5%;
+    display: inline-block;
+    margin-right: 20px;
+    transition: transform 0.2s ease;
+    color: black;
+}
+
+#project-link:hover {
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 768px) {
+    #project-link {
+        margin-top: 50px;
+    }
+}

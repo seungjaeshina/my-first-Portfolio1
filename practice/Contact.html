@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="../resources/images/smoos.png">
+    <style>
+        body, html{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif; /* 기본 폰트 설정 */
+            margin: 0; /* 페이지 바깥 여백 제거 */
+            padding: 0; /* 페이지 안쪽 여백 제거 */
+            background-image: url('../resources/images/background.jpg');
+            background-size: cover;
+            background-position: center;
+
+        }
+        .container {
+
+            max-width: 600px; /* 컨테이너 최대 너비 설정 */
+            margin: 30% auto; /* 페이지 중앙에 위치 */
+            background-image: url("../resources/images/white-background.jpg");
+            padding: 30px; /* 컨테이너 안쪽 여백 설정 */
+            border-radius: 10px; /* 컨테이너 테두리의 모서리 반경 설정 */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+            display: flex;
+            justify-content: center; /* 수평 가운데 정렬 */
+            align-items: center; /* 수직 가운데 정렬 */
+            flex-direction: column; /* 요소들을 세로로 배치 */
+            height: 40%; /* 화면 전체 높이로 설정 */
+        }
+
+        h1 {
+            text-align: center; /* 제목 가운데 정렬 */
+            margin-bottom: 20px; /* 아래 여백 설정 */
+
+        }
+        h2 {
+            margin-top: 20px; /* 제목 간격 설정 */
+
+            text-align: center; /* 제목 가운데 정렬 */
+        }
+        p {
+            text-align: center; /* 문단 가운데 정렬 */
+            margin-top: 10px; /* 문단 간격 설정 */
+            line-height: 1.6; /* 라인 간격 설정 */
+            font-size: 1.2rem;
+        }
+        .contact-info {
+            margin-top: 20px; /* 연락처 정보 위 여백 설정 */
+        }
+        .contact-info h2 {
+            margin-bottom: 10px; /* 연락처 정보 제목 아래 여백 설정 */
+        }
+        .thank-you {
+            font-weight: bold; /* 굵은 폰트 설정 */
+        }
+        .additional-text {
+            margin-top: 30px; /* 추가 텍스트 위 여백 설정 */
+        }
+        .thank-you {
+            font-weight: bold; /* 굵은 폰트 설정 */
+            margin-top: 50px; /* 텍스트 위 여백 설정 */
+            font-size: 1.6rem; /* 폰트 크기 설정 */
+        }
+        .list {
+            position: absolute; /* 로고를 절대적으로 설정 */
+            top: 0; /* 부모 요소 상단부터의 거리 */
+            right: 0; /* 부모 요소 오른쪽부터의 거리 */
+            width: 100px; /* 로고 이미지의 너비 설정 */
+            height: auto; /* 로고 이미지의 높이 자동 조정 */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Contact</h1>
+    <div class="contact-info">
+        <h2>Email:</h2>
+        <p>suengjaeshin96@gmail.com</p>
+    </div>
+    <div class="contact-info">
+        <h2>Phone:</h2>
+        <p>010-7703-6323</p>
+    </div>
+    <p class="additional-text">보잘것 없는 제 포폴을 봐주셔서 너무 감사드립니다.<br>
+        비록 지금은 보잘 것 없지만 다음에는 더욱 업그레이드 해서 보여드리겠습니다.</p>
+    <p class="thank-you">Thank you</p> <!-- 굵은 폰트로 추가된 "Thank you" -->
+</div>
+<a href="menu-screen.html">
+    <img src="../resources/images/list_icon.png" alt="list" class="list">
+</a>
+
+</body>
+</html>

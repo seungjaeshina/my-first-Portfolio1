@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../resources/CSS/selector.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="../resources/images/smoos.png">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../resources/CSS/loading-screen.css" type="text/css">
+    <style>
+        /* 네비게이션 링크 효과 */
+        nav ul li a {
+            position: relative;
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s; /* 색상 변화 효과 */
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px; /* 링크 아래 간격 */
+            left: 0;
+            width: 0%;
+            height: 2px; /* 밑줄 두께 */
+            background-color: #333;
+            transition: width 0.3s; /* 밑줄 너비 변화 효과 */
+        }
+
+        nav ul li a:hover {
+            color: #00FEA4; /* 호버시 텍스트 색상 변경 */
+        }
+
+        nav ul li a:hover::after {
+            width: 100%; /* 호버시 밑줄 너비 확장 */
+        }
+    </style>
+</head>
+<body>
+<!-- 로딩 화면 -->
+<div class="loading-screen">
+    <div class="loading-spinner"></div>
+</div>
+<header>
+
+    <h1>SHIN SEUNG JAE</h1>
+    <h2>Portfolio</h2>
+</header>
+
+<nav>
+    <ul class="main-nav">
+        <li>
+            <a href="about-me.html">ABOUT ME</a>
+        </li>
+        <li>
+            <a href="project-screen.html">PROJECT</a>
+        </li>
+        <li>
+            <a href="Contact.html">CONTACT</a>
+        </li>
+    </ul>
+</nav>
+
+<footer>
+    <p>&copy; 2024 SHIN SEUNG JAE</p>
+</footer>
+
+<script src="../option/loading-screen.js"></script>
+</body>
+
+</html>
